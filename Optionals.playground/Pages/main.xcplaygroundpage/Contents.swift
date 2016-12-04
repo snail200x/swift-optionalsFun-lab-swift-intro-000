@@ -12,7 +12,7 @@
 /*: question1
  ### 1. What is the type of the variable `pet` declared below?
  */
-var pet = "turtle 🐢"
+var pet:String = "turtle 🐢"
 
 
 
@@ -33,7 +33,7 @@ var petName: String?
  ### 3. Currently, what is the _value_ of `petName`?
  */
 
-
+print(petName)
 
 
 
@@ -44,6 +44,8 @@ var petName: String?
  */
 // write your code here
 
+
+petName = "ami"
 
 
 
@@ -57,7 +59,7 @@ var petName: String?
 
 
 
-
+print(petName)
 
 
 
@@ -67,7 +69,11 @@ var petName: String?
 // write your code here
 
 
-
+if petName != nil {
+    print(petName)
+} else {
+    print("There is no pet name.")
+}
 
 
 
@@ -91,8 +97,14 @@ var anotherPetName: String?
 
 
 
+if let anotherPetName = anotherPetName {
+    print(anotherPetName)
+} else {
+    print("The value of anotherPetName is nil")
+}
 
 
+anotherPetName
 
 
 /*: question9
@@ -128,6 +140,9 @@ var anotherPetName: String?
 
 
 
+var testConstantOptionalString:String? = nil
+
+testConstantOptionalString = "happy"
 
 
 
